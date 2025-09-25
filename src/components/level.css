@@ -1,0 +1,29 @@
+.levelWrapper{
+    background-color: var(--color-1);
+}
+
+.questionBox{
+    background-color: var(--color-2);
+    border: 1px solid black;
+}
+
+input{
+    background-color: var(--color-4);
+}
+
+.answerButton{
+    background-color: var(--color-3);
+}
+
+.hintButton{
+    background-color: var(--color-5);
+    border: 1px solid black;
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--color-2);
+}
+
+.hintButton:active{
+    transform: translate(1px,1px);
+}

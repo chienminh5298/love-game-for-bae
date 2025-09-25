@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import Greeting from "./greeting";
 import "./greeting.css";
 import Greeting2 from "./greeting2";
-import Greeting3 from "./greeting3";
+import { useNavigate } from "react-router-dom";
 
 const GreetingSkeleton = () => {
     const [greetingId, setGreetingId] = useState(1);
+    const navigator = useNavigate();
 
     const renderGreetingContent = () => {
         switch (greetingId) {
             case 2:
-                return <Greeting2 setGreetingId={setGreetingId}/>;
+                return <Greeting2 setGreetingId={setGreetingId} />;
             case 3:
-                return <Greeting3 setGreetingId={setGreetingId}/>;
+                return navigator("level");
             default:
-                return <Greeting setGreetingId={setGreetingId}/>;
+                return <Greeting setGreetingId={setGreetingId} />;
         }
     };
 
