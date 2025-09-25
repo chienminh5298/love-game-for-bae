@@ -1,0 +1,20 @@
+.greetingWrapper{
+  background-color: var(--color-1);
+}
+
+.greetingBoxWrapper{
+  border: black 1px solid;
+  background-color: var(--color-2);
+}
+
+.greetingNextButton{
+    border: black 1px solid;
+    background-color: white;
+    cursor: pointer;
+    right: 2.5%;
+    bottom: -10%;
+    &:active{
+      transform: translate(1px,1px);
+    }
+}
+
