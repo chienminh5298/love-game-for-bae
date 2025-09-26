@@ -1,21 +1,25 @@
-.levelWrapper{
+.levelWrapper {
     background-color: var(--color-1);
 }
 
-.questionBox{
+.questionBox {
     background-color: var(--color-2);
     border: 1px solid black;
 }
 
-input{
+input {
     background-color: var(--color-4);
 }
 
-.answerButton{
+.answerButton {
     background-color: var(--color-3);
+    cursor: pointer;
+    &:active {
+        transform: translate(1px, 1px);
+    }
 }
 
-.hintButton{
+.hintButton {
     background-color: var(--color-5);
     border: 1px solid black;
     color: black;
@@ -24,6 +28,6 @@ input{
     background-color: var(--color-2);
 }
 
-.hintButton:active{
-    transform: translate(1px,1px);
+.hintButton:active {
+    transform: translate(1px, 1px);
 }

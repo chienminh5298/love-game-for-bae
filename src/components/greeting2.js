@@ -13,7 +13,7 @@ const Greeting2 = ({ setGreetingId }) => {
             <div className="text-center">{text}</div>
             {finished && (
                 <button onClick={handleClickButton} className="absolute greetingNextButton px-5 py-1 rounded-sm">
-                    Gẹt gô gô !!!
+                    ❤️ Gẹt gô gô !!!
                 </button>
             )}
         </Fragment>

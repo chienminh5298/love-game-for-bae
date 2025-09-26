@@ -1,0 +1,123 @@
+.welcomeWrapper {
+    background-color: var(--color-1);
+    overflow: hidden;
+}
+
+.black {
+    background: black;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.welcomeText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.lighter {
+    transition: all 2s;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-1);
+    z-index: 2;
+    animation: moveLight 15s forwards;
+}
+@keyframes moveLight {
+    /* bắt đầu ở center */
+    0% {
+        left: 0%;
+        top: 50%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+
+    /* chạm cạnh trái */
+    10% {
+        left: 50%;
+        top: 10%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+
+    /* chạm cạnh trên */
+    25% {
+        left: 10%;
+        top: 80%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+
+    /* chạm cạnh phải */
+    40% {
+        left: 70%;
+        top: 40%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+
+    /* chạm cạnh dưới */
+    55% {
+        left: 30%;
+        top: 20%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+
+    /* thêm lần va cạnh trái trên */
+    70% {
+        left: 75%;
+        top: 85%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+
+    /* thêm lần va cạnh phải dưới */
+    85% {
+        left: 30%;
+        top: 65%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+
+    95% {
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
+        width: 280px;
+        height: 280px;
+    }
+    /* kết thúc về center */
+    100% {
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.welcomeNext {
+    cursor: pointer;
+    position: absolute;
+    z-index: 4;
+    left: 90%;
+    top: 90%;
+    background-color: var(--color-2);
+    border: solid 1px black;
+    &:active {
+        transform: translate(1px, 1px);
+    }
+}

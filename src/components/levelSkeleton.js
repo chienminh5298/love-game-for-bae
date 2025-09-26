@@ -2,15 +2,16 @@ import React, { Fragment, useState } from "react";
 import "./level.css";
 import { useNavigate } from "react-router-dom";
 import Level1 from "./level1";
+import Level2 from "./level2";
 
 const LevelSkeleton = () => {
-    const [levelId, setLevelId] = useState(1);
+    const [levelId, setLevelId] = useState(2);
     const navigator = useNavigate();
 
     const renderGreetingContent = () => {
         switch (levelId) {
             case 2:
-            // return <Greeting2 setLevelId={setLevelId} />;
+            return <Level2 setLevelId={setLevelId} />;
             case 3:
                 return navigator("level");
             default:

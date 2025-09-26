@@ -1,18 +1,9 @@
 import React, { Fragment, useState } from "react";
 import useTypewriter from "../hook/typewritter";
-import level1Image from "../media/img/level1.png";
-import hint1 from "../media/gif/hint1lv1.gif";
-import hint2 from "../media/gif/hint2lv1.gif";
 import "./level.css";
-
-const Level1 = ({ setLevelId }) => {
-    const { text, finished } = useTypewriter(
-        `Hãy giải mã nội dung được mã hoá "YRHYCOAEYAPPAEUMPL". Gợi ý của bby như sau: Âm thanh không đi thẳng,
-mà uốn lượn lên xuống.
-Khi viết đúng theo nhịp,
-giai điệu tim sẽ vang.`,
-        { speed: 50, startDelay: 500 }
-    );
+import mun from "../media/img/mun.png";
+const Level2 = ({ setLevelId }) => {
+    const { text, finished } = useTypewriter(`"Trình độ" không thể nào so sánh được với tình yêu thương của cha mẹ dành cho con cái. Nên bby hãy thay thế "Trình độ" bằng tên cúng cơm của con nhé.`, { speed: 50, startDelay: 500 });
 
     const [showHint, setShowHint] = useState(false);
     const [inputValue, setInputValue] = useState("");
@@ -21,9 +12,9 @@ giai điệu tim sẽ vang.`,
     };
 
     const handleSubmit = () => {
-        if (inputValue.trim().toLowerCase() === "you are my happy place") {
-            alert("Chúc mừng bby đã vượt qua level 1. Cùng chồng qua level tiếp theo nhé!");
-            setLevelId(2);
+        if (inputValue.trim().toLowerCase() === "Di an ramen thoi") {
+            alert("Chúc mừng bby đã vượt qua level 2. Cùng chồng qua level tiếp theo nhé!");
+            setLevelId(3);
         } else {
             alert("Đáp án chưa đúng, bby thử lại nhé!");
         }
@@ -31,23 +22,20 @@ giai điệu tim sẽ vang.`,
     return (
         <div className="w-1/2">
             <div className="question">
-                <h1 className="text-3xl font-bold">Level 1</h1>
+                <h1 className="text-3xl font-bold">Level 2</h1>
                 <div className="mt-5 p-2 rounded-md questionBox">{text}</div>
             </div>
 
             {finished && (
                 <Fragment>
-                    <div className="additionalInfo mt-5">
-                        <img src={level1Image} alt="level1" className="w-1/2 rounded-xl" />
-                    </div>
                     <div className="hint mt-5">
                         <div className="hintButton p-2 rounded-sm" onClick={() => setShowHint(!showHint)}>
                             Hint ở đây nè bae.
                         </div>
                         {showHint && (
                             <Fragment>
-                                <img src={hint1} alt="hint1" className="w-1/2 rounded-xl my-2" />
-                                <img src={hint2} alt="hint1" className="w-1/2 rounded-xl" />
+                                <h1 className="text-bold">URL</h1>
+                                <img src={mun} alt="hint1" className="w-1/2 rounded-xl my-2" />
                             </Fragment>
                         )}
                     </div>
@@ -63,4 +51,4 @@ giai điệu tim sẽ vang.`,
     );
 };
 
-export default Level1;
+export default Level2;

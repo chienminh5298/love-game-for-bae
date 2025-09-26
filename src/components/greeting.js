@@ -13,7 +13,7 @@ const Greeting = ({ setGreetingId }) => {
             <div>{text}</div>
             {finished && (
                 <button onClick={handleClickButton} className="absolute greetingNextButton px-5 py-1 rounded-sm">
-                    Next
+                    ❤️ Next
                 </button>
             )}
         </Fragment>

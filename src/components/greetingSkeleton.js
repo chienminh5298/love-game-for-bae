@@ -13,7 +13,7 @@ const GreetingSkeleton = () => {
             case 2:
                 return <Greeting2 setGreetingId={setGreetingId} />;
             case 3:
-                return navigator("level");
+                return navigator("/level");
             default:
                 return <Greeting setGreetingId={setGreetingId} />;
         }
