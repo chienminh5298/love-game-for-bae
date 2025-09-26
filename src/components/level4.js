@@ -2,8 +2,10 @@ import React, { Fragment, useState } from "react";
 import useTypewriter from "../hook/typewritter";
 import "./level.css";
 import mun from "../media/img/mun.png";
-const Level2 = ({ setLevelId }) => {
-    const { text, finished } = useTypewriter(`"Trình độ" không thể nào so sánh được với tình yêu thương của cha mẹ dành cho con cái. Nên bby hãy thay thế "Trình độ" bằng tên cúng cơm của con nhé.`, { speed: 50, startDelay: 500 });
+import level4img from "../media/img/level4.png";
+
+const Level4 = ({ setLevelId }) => {
+    const { text, finished } = useTypewriter(`Đáp án này không ở trong máy. Nó nằm giữa da và giấy, nơi mỗi ngày đều nghe tiếng kim loại khẽ leng keng. Muốn gọi nó dậy, hãy tìm kị sĩ cầm gậy phi nước đại trong im lặng. Khi thấy hai chữ cái quen quen của người Pháp.`, { speed: 50, startDelay: 500 });
 
     const [showHint, setShowHint] = useState(false);
     const [inputValue, setInputValue] = useState("");
@@ -12,9 +14,9 @@ const Level2 = ({ setLevelId }) => {
     };
 
     const handleSubmit = () => {
-        if (inputValue.trim().toLowerCase() === "di an ramen thoi") {
-            alert("Chúc mừng bby đã vượt qua level 2. Cùng chồng qua level tiếp theo nhé!");
-            setLevelId(3);
+        if (inputValue.trim().toLowerCase() === "forever and always") {
+            alert("Chúc mừng bby đã vượt qua level 4. Cùng chồng qua level tiếp theo nhé!");
+            setLevelId(4);
         } else {
             alert("Đáp án chưa đúng, bby thử lại nhé!");
         }
@@ -22,20 +24,22 @@ const Level2 = ({ setLevelId }) => {
     return (
         <div className="w-1/2">
             <div className="question">
-                <h1 className="text-3xl font-bold">Level 2</h1>
+                <h1 className="text-3xl font-bold">Level 4</h1>
                 <div className="mt-5 p-2 rounded-md questionBox">{text}</div>
             </div>
 
             {finished && (
                 <Fragment>
+                    <div className="additionalInfo mt-5">
+                        <img src={level4img} alt="level1" className="w-1/2 rounded-xl" />
+                    </div>
                     <div className="hint mt-5">
                         <div className="hintButton p-2 rounded-sm" onClick={() => setShowHint(!showHint)}>
                             Hint ở đây nè bae.
                         </div>
                         {showHint && (
                             <Fragment>
-                                <h1 className="text-bold">URL</h1>
-                                <img src={mun} alt="hint1" className="w-1/2 rounded-xl my-2" />
+                                <h1 className="text-bold">Vòng này không có hint đây liu liuuuuu</h1>
                             </Fragment>
                         )}
                     </div>
@@ -51,4 +55,4 @@ const Level2 = ({ setLevelId }) => {
     );
 };
 
-export default Level2;
+export default Level4;
