@@ -77,10 +77,6 @@ input {
     padding: 20px;
 }
 
-/* Front Face Styling */
-.flip-card-front {
-}
-
 .flip-card-front h3 {
     font-size: 26px;
     font-weight: 600;
@@ -107,4 +103,8 @@ input {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+.selectLevel5{
+    background-color: var(--color-4);
 }
