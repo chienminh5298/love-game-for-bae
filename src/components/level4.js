@@ -15,7 +15,7 @@ const Level4 = ({ setLevelId }) => {
     };
 
     const handleSubmit = () => {
-        if (inputValue.trim().toLowerCase() === "forever and always") {
+        if (inputValue.trim().toLowerCase() === "you are my little world") {
             alert("Chúc mừng bby đã vượt qua level 4. Cùng chồng qua level tiếp theo nhé!");
             setLevelId(5);
         } else {

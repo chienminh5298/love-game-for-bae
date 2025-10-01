@@ -6,7 +6,7 @@ import level5hint from "../media/gif/hintlv5.gif";
 const Level5 = ({ setLevelId }) => {
     sessionStorage.setItem("session", 5);
 
-    const { text, finished } = useTypewriter(`Baby của chồng chỉ cần trả lời đúng 1 trong 3 câu hỏi.`, { speed: 50, startDelay: 500 });
+    const { text, finished } = useTypewriter(`Baby của chồng chỉ cần trả lời đúng 1 trong 3 câu hỏi. Answer by English`, { speed: 50, startDelay: 500 });
 
     const [showHint, setShowHint] = useState(false);
     const [inputValue, setInputValue] = useState("");

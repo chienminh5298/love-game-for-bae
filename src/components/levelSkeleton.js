@@ -16,7 +16,7 @@ const LevelSkeleton = () => {
         sessionStorage.setItem("session", 1);
     }
 
-    const [levelId, setLevelId] = useState(parseInt(7));
+    const [levelId, setLevelId] = useState(parseInt(session));
     const navigator = useNavigate();
     const renderGreetingContent = () => {
         switch (levelId) {
