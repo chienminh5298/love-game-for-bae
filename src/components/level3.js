@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
 import useTypewriter from "../hook/typewritter";
 import "./level.css";
-import mun from "../media/img/mun.png";
 import level3img from "../media/img/level3.png";
 
 const Level3 = ({ setLevelId }) => {
