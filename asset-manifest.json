@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/love-game-for-bae/static/css/main.49094678.css",
+    "main.js": "/love-game-for-bae/static/js/main.4aa472bd.js",
+    "static/media/finalVid.mp4": "/love-game-for-bae/static/media/finalVid.c7dbb6fe82d961197e45.mp4",
+    "static/media/level3.png": "/love-game-for-bae/static/media/level3.b380ef2ef54dab964ba0.png",
+    "static/media/hint1lv1.gif": "/love-game-for-bae/static/media/hint1lv1.6df58dc19003efa8ce21.gif",
+    "static/media/hintlv5.gif": "/love-game-for-bae/static/media/hintlv5.3fe7578c47c1a719dc2c.gif",
+    "static/media/level1.png": "/love-game-for-bae/static/media/level1.0f0a4412cff21905eea9.png",
+    "static/media/hello3.png": "/love-game-for-bae/static/media/hello3.32ba60a0358c917d0645.png",
+    "static/media/hello4.png": "/love-game-for-bae/static/media/hello4.08a7a02c3e79e542ed16.png",
+    "static/media/hello1.png": "/love-game-for-bae/static/media/hello1.a8dee144f9138c0ef8c9.png",
+    "static/media/hello2.png": "/love-game-for-bae/static/media/hello2.7e763f04fb4778a77838.png",
+    "static/media/mun.png": "/love-game-for-bae/static/media/mun.bad0427213b75c1e857d.png",
+    "static/media/hint2lv1.gif": "/love-game-for-bae/static/media/hint2lv1.d8c571954cccc6374bed.gif",
+    "static/media/text2.mp3": "/love-game-for-bae/static/media/text2.e2203c8345ba5e4ded31.mp3",
+    "static/media/level4.png": "/love-game-for-bae/static/media/level4.517dbefdd8d5a795996d.png",
+    "static/media/level7.gif": "/love-game-for-bae/static/media/level7.bbd12eb4d583b95114bc.gif",
+    "static/media/text1.mp3": "/love-game-for-bae/static/media/text1.d1134891ece418317f21.mp3",
+    "index.html": "/love-game-for-bae/index.html",
+    "main.49094678.css.map": "/love-game-for-bae/static/css/main.49094678.css.map",
+    "main.4aa472bd.js.map": "/love-game-for-bae/static/js/main.4aa472bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49094678.css",
+    "static/js/main.4aa472bd.js"
+  ]
+}
