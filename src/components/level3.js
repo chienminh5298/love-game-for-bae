@@ -5,6 +5,8 @@ import mun from "../media/img/mun.png";
 import level3img from "../media/img/level3.png";
 
 const Level3 = ({ setLevelId }) => {
+    sessionStorage.setItem("session", 3);
+
     const { text, finished } = useTypewriter(`Ánh đèn chỉ bật khi bạn không di chuyển. Giữ nguyên để thấy sự thật.`, { speed: 50, startDelay: 500 });
 
     const [showHint, setShowHint] = useState(false);
@@ -35,7 +37,7 @@ const Level3 = ({ setLevelId }) => {
                             <div class="flip-card" id="flipCard">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <img src={level3img} alt="level3"/>
+                                        <img src={level3img} alt="level3" />
                                     </div>
                                     <div class="flip-card-back">
                                         <p>Forever and always</p>

@@ -6,6 +6,7 @@ import hint2 from "../media/gif/hint2lv1.gif";
 import "./level.css";
 
 const Level1 = ({ setLevelId }) => {
+
     const { text, finished } = useTypewriter(
         `Hãy giải mã nội dung được mã hoá "YRHYCOAEYAPPAEUMPL". Gợi ý của bby như sau: Âm thanh không đi thẳng,
 mà uốn lượn lên xuống.

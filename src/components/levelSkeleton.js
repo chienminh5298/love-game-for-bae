@@ -1,19 +1,23 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import "./level.css";
-import { useNavigate } from "react-router-dom";
 import Level1 from "./level1";
 import Level2 from "./level2";
 import Level3 from "./level3";
 import Level4 from "./level4";
 
 const LevelSkeleton = () => {
-    const [levelId, setLevelId] = useState(4);
-    const navigator = useNavigate();
+    let session = sessionStorage.getItem("session");
+    if (!session) {
+        session = 1;
+        sessionStorage.setItem("session", 1);
+    }
+
+    const [levelId, setLevelId] = useState(parseInt(session));
 
     const renderGreetingContent = () => {
         switch (levelId) {
             case 2:
-            return <Level2 setLevelId={setLevelId} />;
+                return <Level2 setLevelId={setLevelId} />;
             case 3:
                 return <Level3 setLevelId={setLevelId} />;
             case 4:
