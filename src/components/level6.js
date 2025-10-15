@@ -3,7 +3,7 @@ import useTypewriter from "../hook/typewritter";
 import "./level.css";
 
 const Level6 = ({ setLevelId }) => {
-    sessionStorage.setItem("session", 6);
+    localStorage.setItem("session", 6);
 
     const { text, finished } = useTypewriter(`It's time to Google-ing bby. Right-clicking might not be enough. "Inspect" the element to see what others can’t.`, { speed: 50, startDelay: 500 });
 

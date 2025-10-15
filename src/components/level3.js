@@ -4,7 +4,7 @@ import "./level.css";
 import level3img from "../media/img/level3.png";
 
 const Level3 = ({ setLevelId }) => {
-    sessionStorage.setItem("session", 3);
+    localStorage.setItem("session", 3);
 
     const { text, finished } = useTypewriter(`Ánh đèn chỉ bật khi bạn không di chuyển. Giữ nguyên để thấy sự thật.`, { speed: 50, startDelay: 500 });
 

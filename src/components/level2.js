@@ -3,7 +3,7 @@ import useTypewriter from "../hook/typewritter";
 import "./level.css";
 import mun from "../media/img/mun.png";
 const Level2 = ({ setLevelId }) => {
-    sessionStorage.setItem("session", 2);
+    localStorage.setItem("session", 2);
     const { text, finished } = useTypewriter(`"Trình độ" không thể nào so sánh được với tình yêu thương của cha mẹ dành cho con cái. Nên bby hãy thay thế "Trình độ" bằng tên cúng cơm của con nhé.`, { speed: 50, startDelay: 500 });
 
     const [showHint, setShowHint] = useState(false);

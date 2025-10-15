@@ -4,7 +4,7 @@ import "./level.css";
 import level4img from "../media/img/level4.png";
 
 const Level4 = ({ setLevelId }) => {
-    sessionStorage.setItem("session", 4);
+    localStorage.setItem("session", 4);
 
     const { text, finished } = useTypewriter(`Đáp án này không ở trong máy. Nó nằm giữa da và giấy, nơi mỗi ngày đều nghe tiếng kim loại khẽ leng keng. Muốn gọi nó dậy, hãy tìm kị sĩ cầm gậy phi nước đại trong im lặng. Khi thấy hai chữ cái quen quen của người Pháp. Để gọi nó ra hãy nhìn thẳng vào 2 hạt nhãn long lanh và nói "Hô hô hô, khẹc khẹc khẹc"`, { speed: 50, startDelay: 500 });
 

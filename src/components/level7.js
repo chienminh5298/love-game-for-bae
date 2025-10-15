@@ -3,7 +3,7 @@ import useTypewriter from "../hook/typewritter";
 import "./level.css";
 import level7 from "../media/gif/level7.gif";
 const Level7 = ({ setLevelId }) => {
-    sessionStorage.setItem("session", 7);
+    localStorage.setItem("session", 7);
 
     const { text, finished } = useTypewriter(`It's the slot machine lucky number!!!`, { speed: 50, startDelay: 500 });
 

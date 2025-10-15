@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import "./level.css";
 import Level1 from "./level1";
 import Level2 from "./level2";
@@ -10,10 +10,10 @@ import Level7 from "./level7";
 import { useNavigate } from "react-router-dom";
 
 const LevelSkeleton = () => {
-    let session = sessionStorage.getItem("session");
+    let session = localStorage.getItem("session");
     if (!session) {
         session = 1;
-        sessionStorage.setItem("session", 1);
+        localStorage.setItem("session", 1);
     }
 
     const [levelId, setLevelId] = useState(parseInt(session));
@@ -39,7 +39,12 @@ const LevelSkeleton = () => {
         }
     };
 
-    return <div className="min-h-screen p-5 flex flex-col items-center bg-gray-100 gap-6 w-full levelWrapper">{renderGreetingContent()}</div>;
+    return (
+        <Fragment>
+            <div className="min-h-screen p-5 flex flex-col items-center bg-gray-100 gap-6 w-full levelWrapper">{renderGreetingContent()}</div>
+            <div className="invisible">Hihi baby tìm anh hảaaaaa. Đáp án của bby là "anh yeu em rat nhieuuuuu</div>
+        </Fragment>
+    );
 };
 
 export default LevelSkeleton;
